@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+:root{
+    --open: 'Open Sans', sans-serif;
+    --purple: #744FA0;
+}
+
+
+/*navbar*/
+
+nav{
+    background: transparent;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    margin-top: 50px;
+}
+
+nav .logo{
+    float: left;
+}
+
+.menubar ul{
+    float: right;
+    margin-top: 14px;
+}
+
+.menubar ul{
+    display: flex;
+    list-style: none;
+}
+
+.menubar ul a{
+    padding: 10px 20px;
+    color: #fff;
+    transition: .4s;
+}
+
+.menubar ul a:hover{
+    color: var(--purple);
+}
+
+/*end of navbar*/
+
+
+/*banner*/
+
+.banner_1{
+    background: url(assets/img/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner .banner_overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 100px 0;
+}
+
+
+/*end of banner*/
+
+
+/*team*/
+
+.item{
+    width: 100px;
+    position: relative;
+}
+
+.item:hover .item_img{
+    /*position: absolute;*/
+    top: -50px;
+    left: 0;
+}
+.item:hover .item_text{
+    /*position: absolute;*/
+    top: 50px;
+    left: 0;
+}
+
+.item .item_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    transition: .5s;
+}
+
+.item .item_text{
+    width: 100%;
+    height: 100%;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;    transition: .5s;
+}
